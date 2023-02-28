@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+body nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: #e0dddd;
+}
+body nav .marvel-logo {
+  max-width: 100%;
+  height: 100%;
+}
+body nav .nav {
+  display: flex;
+  list-style: none;
+  color: rgb(128, 4, 4);
+  font-weight: 600;
+  height: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+}
+body nav .nav-link {
+  margin-right: 2rem;
+}
+body nav .nav .nav-link:hover {
+  transform: scale(1.2);
+  transition: all 0.8s;
+}
+body .container {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+body .container .main-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+body .container .marvel-cards {
+  width: 80%;
+  padding: 3rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  /*   transition: 2s; */
+  /* .marvel-cards:hover > :not(:hover){
+      opacity:.4;
+  } */
+}
+body .container .marvel-cards .card {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border: 4px solid rgb(128, 4, 4);
+  border-radius: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+body .container .marvel-cards .card-thumbnail {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+  image-rendering: auto;
+}
+body .container .marvel-cards .card:hover {
+  transform: scale(1.08);
+}
+body .footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #e0dddd;
+  color: rgb(128, 4, 4);
+}
+body .footer .blink {
+  animation: backwards 0.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=style.css.map */
